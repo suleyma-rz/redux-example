@@ -5,7 +5,7 @@ import TodoItem from "../todoItem";
 const TodoList = ({taskList}) => (
   <div className="todo-list">
       {taskList.map(item=>
-          <TodoItem text={item.text} />
+          <TodoItem {...item}/>
       )}
   </div>
 );

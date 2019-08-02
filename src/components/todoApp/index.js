@@ -4,9 +4,9 @@ import TodoInput from '../todoInput'
 import Filters from '../filters'
 
 const dummyData=[
-    {id:0,text:'Hello'},
-    {id:2,text:'Its'},
-    {id:3,text:'Me'},
+    {text:'Hello', completed:true, onClick:()=>{}},
+    {text:'Its', completed:false, onClick:()=>{}},
+    {text:'Me', completed:false, onClick:()=>{}},
 ]
 
 const TodoApp = () => (
