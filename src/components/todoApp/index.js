@@ -4,15 +4,15 @@ import TodoInput from '../todoInput'
 import Filters from '../filters'
 
 const dummyData=[
-    {text:'Hello', completed:true, onClick:()=>{}},
-    {text:'Its', completed:false, onClick:()=>{}},
-    {text:'Me', completed:false, onClick:()=>{}},
+    {text:'Hello', completed:true, id:0},
+    {text:'Its', completed:false, id:1},
+    {text:'Me', completed:false, id:2},
 ]
 
 const TodoApp = () => (
     <div className="todo-app-container">
         <Filters/>
-        <TodoList taskList={dummyData}/>
+        <TodoList todos={dummyData} toggleTodo={()=>{}}/>
         <TodoInput />
 
     </div>
